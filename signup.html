@@ -25,14 +25,14 @@
         <img src="img/hamburger.png" class="menu-icon" onclick="menutoggle()">
     </div>
 <!-- LOGIN FORM -->
-<form action="action_page.php" method="post">
-    
+<form id="myform">
     <div class="container">
-      <label for="uname"><b>Username</b></label>
-      <input type="text" placeholder="Enter Username" name="uname" required>
+      <div id="error_message"></div>
+      <label for="uname"><b>Email</b></label>
+      <input id="inputEmail" type="email" placeholder="Enter Email">
   
       <label for="psw"><b>Password</b></label>
-      <input type="password" placeholder="Enter Password" name="psw" required>
+      <input id="inputPassword" type="password" placeholder="Enter Password">
   
       <button type="submit">Login</button>
       <label>
