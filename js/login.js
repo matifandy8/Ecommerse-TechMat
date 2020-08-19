@@ -23,9 +23,17 @@ function validation(){
 // ------------------------
 
 const form = document.getElementById('myform');
+const email = document.getElementById('inputEmail');
+const password = document.getElementById('inputPassword');
 
 form.addEventListener('submit', (e) => {
     e.preventDefault();
-
+let users = Array(
+        {
+          email: email.value,
+          contraseña: password.value
+        }
+);
+    localStorage.setItem('user',JSON.stringify(users));
     validation();
 });
