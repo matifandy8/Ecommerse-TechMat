@@ -16,7 +16,7 @@ function validation(){
     error_message.innerHTML = text;
     return false;
   }
-  window.location="index.html"
+  window.location="home.html"
   return true;
 }
 
