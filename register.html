@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <link rel="stylesheet" href="styles.css">
+     <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap" rel="stylesheet">
+     <script src="https://kit.fontawesome.com/6b25f458be.js" crossorigin="anonymous"></script>
+     <title>TechMat/Ecommerse</title>
+</head>
+<body>
+    <div class="navbar">
+        <div class="logo">
+            <h1>TechMat</h1>
+        </div>
+        <nav>
+          <div class="navbar">
+              <a href="index.html">Home</a>
+              <div class="subnav">
+                <button class="subnavbtn">Cart<i class="fas fa-shopping-cart"></i><span>0</span></button>
+              </div> 
+              <div class="subnav">
+                <button class="subnavbtn">Services <i class="fa fa-caret-down"></i></button>
+                <div class="subnav-content">
+                  <a href="#bring">Bring</a>
+                  <a href="#deliver">Deliver</a>
+                  <a href="#package">Package</a>
+                  <a href="#express">Express</a>
+                </div>
+              </div> 
+              <div class="subnav">
+                <button class="subnavbtn">Products <i class="fa fa-caret-down"></i></button>
+                <div class="subnav-content">
+                  <a href="#link1">Mouses</a>
+                  <a href="#link2">Keyboards</a>
+                  <a href="#link3">Headphones</a>
+                  <a href="#link4">Laptops</a>
+                </div>
+              </div>
+              <a href="register.html" id="usernav">Register</a>
+              <a href="#">Login</a>
+              <a href="#">Logout</a>
+            </div>
+            
+      </nav>
+    </div>
+
+<!-- LOGIN FORM -->
+<div class="signup-form">
+  <form action="/examples/actions/confirmation.php" method="post" id="myform">
+  <h2>Register</h2>
+  <p class="hint-text">Create your account. It's free and only takes a minute.</p>
+      <div class="form-group">
+          	
+      </div>
+      <div class="form-group">
+        <input type="email" id="inputEmail" class="form-control" name="email" placeholder="Email" required="required">
+      </div>
+  <div class="form-group">
+          <input type="password" id="inputPassword" class="form-control" name="password" placeholder="Password" required="required">
+      </div>     
+      <div class="form-group">
+    <label class="checkbox-inline"><input type="checkbox" required="required"> I accept the <a href="#">Terms of Use</a> &amp; <a href="#">Privacy Policy</a></label>
+  </div>
+  <div class="form-group">
+          <button type="submit" class="btn btn-dark btn-lg btn-block">Register Now</button>
+      </div>
+  </form>
+<div class="text-center">Already have an account? <a href="#">Sign in</a></div>
+</div>
+
+
+
+     
+     <!------------------ FIREBASE SCRIPTS ------------------->
+<!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/7.20.0/firebase-app.js"></script>
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+     <script src="https://www.gstatic.com/firebasejs/7.20.0/firebase-auth.js"></script>
+
+<script>
+  // Your web app's Firebase configuration
+  var firebaseConfig = {
+    apiKey: "AIzaSyCFBGVUNVVepyYNC9eLTSBRsNsNw1eEMb4",
+    authDomain: "fb-test-b3c2a.firebaseapp.com",
+    databaseURL: "https://fb-test-b3c2a.firebaseio.com",
+    projectId: "fb-test-b3c2a",
+    storageBucket: "fb-test-b3c2a.appspot.com",
+    messagingSenderId: "418928861305",
+    appId: "1:418928861305:web:08d71c1f523ad9ba2ab4a8"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+  const auth = firebase.auth();
+
+</script>
+
+
+     <!-- CUSTOM CODE -->
+    <script src="js/login.js"></script>
+</body>
+</html>
