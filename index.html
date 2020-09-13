@@ -7,46 +7,35 @@
     <link rel="stylesheet" href="styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/6b25f458be.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
     <title>TechMat/Ecommerse</title>
 </head>
-
 <body>
-    <div class="header">
-        <div class="container">
-            <div class="navbar">
-                <div class="logo">
-                    <h1 class="techmat">TechMat</h1>
-                </div>
-                <nav>
-                    <div class="navbar">
-                        <a href="#home">Home</a>
-                        <div class="subnav">
-                          <button class="subnavbtn">Cart<i class="fas fa-shopping-cart"></i><span>0</span></button>
-                        </div> 
-                        <div class="subnav">
-                          <button class="subnavbtn">Services <i class="fa fa-caret-down"></i></button>
-                          <div class="subnav-content">
-                            <a href="#bring">Bring</a>
-                            <a href="#deliver">Deliver</a>
-                            <a href="#package">Package</a>
-                            <a href="#express">Express</a>
-                          </div>
-                        </div> 
-                        <div class="subnav">
-                          <button class="subnavbtn">Products <i class="fa fa-caret-down"></i></button>
-                          <div class="subnav-content">
-                            <a href="#link1">Mouses</a>
-                            <a href="#link2">Keyboards</a>
-                            <a href="#link3">Headphones</a>
-                            <a href="#link4">Laptops</a>
-                          </div>
-                        </div>
-                        <a href="register.html" id="usernav">Register</a>
-                        <a href="login.html">Login</a>
-                      </div>
-                      
-                </nav>
-            </div>
+    <nav class="navbar navbar-inverse">
+        <div class="container-fluid">
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>                        
+            </button>
+            <a class="navbar-brand" href="#">TechMat</a>
+          </div>
+          <div class="collapse navbar-collapse" id="myNavbar">
+            <ul class="nav navbar-nav">
+              <li class="active"><a href="#">Home</a></li>
+              <li><a href="#">Products</a></li>
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+              <li><a href="register.html"><span class="glyphicon glyphicon-user"></span> Register</a></li>
+              <li><a href="login.html"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+        
             <div class="row">
                 <div class="col-2">
                     <h1>Lorem ipsum <br> dolor sit amet.</h1>
@@ -59,8 +48,6 @@
                     <img src="img/header.png" alt="">
                 </div>
             </div>
-        </div>
-    </div>
 
     <!-- Categories -->
     <div class="categories">

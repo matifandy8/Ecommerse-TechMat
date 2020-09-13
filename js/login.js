@@ -1,24 +1,27 @@
 
-// ------------------------
+// Login
+const register = document.getElementById('myform-login');
 
-const form = document.getElementById('myform');
+register.addEventListener('submit', (e) => {
+  e.preventDefault();
+  const email = document.getElementById('loginEmail').value;
+  const password = document.getElementById('loginPassword').value;
 
-form.addEventListener('submit', (e) => {
-    e.preventDefault();
-
-    const email = document.getElementById('inputEmail').value;
-    const password = document.getElementById('inputPassword').value;
-
-    
-    auth
-    .createUserWithEmailAndPassword(email, password)
+  auth
+    .signInWithEmailAndPassword(email, password)
     .then(userCredential => {
-
     //  clear the form
-    form.reset();
-
-
-      console.log('sign up')
+    register.reset();
+      console.log('sign in')
     })
-
 });
+
+
+const logout = document.querySelector('#logout');
+
+logout.addEventListener('click', e => {
+  e.preventDefault();
+  auth.signOut().then(() => {
+    console.log('sign out')
+  })
+})

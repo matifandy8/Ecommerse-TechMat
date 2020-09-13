@@ -31,25 +31,25 @@
         <ul class="nav navbar-nav navbar-right">
           <li><a href="register.html"><span class="glyphicon glyphicon-user" class="active"></span> Register</a></li>
           <li><a href="login.html"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+          <li><a href="#" id="logout"><span class="glyphicon glyphicon-log-out"></span> Logout</a></li>
         </ul>
       </div>
     </div>
   </nav>
     
 
-<!-- Register FORM -->
+<!-- LOGIN FORM -->
 <div class="signup-form">
-  <form action="/examples/actions/confirmation.php" method="post" id="myform">
-  <h2>Register</h2>
-  <p class="hint-text">Create your account. It's free and only takes a minute.</p>
+  <form  id="myform-login">
+  <h2>Login</h2>
       <div class="form-group">
           	
       </div>
       <div class="form-group">
-        <input type="email" id="inputEmail" class="form-control" name="email" placeholder="Email" required="required">
+        <input type="email" id="loginEmail" class="form-control" name="email" placeholder="Email" required="required">
       </div>
-  <div class="form-group">
-          <input type="password" id="inputPassword" class="form-control" name="password" placeholder="Password" required="required">
+       <div class="form-group">
+          <input type="password" id="loginPassword" class="form-control" name="password" placeholder="Password" required="required">
       </div>     
       <div class="form-group">
     <label class="checkbox-inline"><input type="checkbox" required="required"> I accept the <a href="#">Terms of Use</a> &amp; <a href="#">Privacy Policy</a></label>
@@ -58,12 +58,10 @@
           <button type="submit" class="btn btn-dark btn-lg btn-block">Register Now</button>
       </div>
   </form>
-<div class="text-center">Already have an account? <a href="#">Sign in</a></div>
+<div class="text-center">Don't have an account? <a href="#">Register</a></div>
 </div>
 
 
-
-     
      <!------------------ FIREBASE SCRIPTS ------------------->
 <!-- The core Firebase JS SDK is always required and must be listed first -->
 <script src="https://www.gstatic.com/firebasejs/7.20.0/firebase-app.js"></script>
@@ -73,6 +71,7 @@
      <script src="https://www.gstatic.com/firebasejs/7.20.0/firebase-auth.js"></script>
 
      <script src="https://www.gstatic.com/firebasejs/7.20.0/firebase-firestore.js"></script>
+
 
 <script>
   // Your web app's Firebase configuration
@@ -90,10 +89,11 @@
   const auth = firebase.auth();
   const fs = firebase.firestore();
 
+
 </script>
-     
+
 
      <!-- CUSTOM CODE -->
-    <script src="js/register.js"></script>
+    <script src="js/login.js"></script>
 </body>
 </html>
